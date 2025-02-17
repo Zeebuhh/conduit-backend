@@ -21,4 +21,4 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 
 # Command to run the application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8282"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
