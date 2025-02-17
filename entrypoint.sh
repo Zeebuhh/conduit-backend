@@ -6,6 +6,6 @@ python manage.py migrate
 
 # Create a superuser if not exists
 if [ -n "$DJANGO_SUPERUSER_USERNAME" ] && [ -n "$DJANGO_SUPERUSER_PASSWORD" ]; then
-    python manage.py createsuperuser --no-input
+    python manage.py createsuperuser --no-input --email "$DJANGO_SUPERUSER_EMAIL"
 fi
 exec "$@"
