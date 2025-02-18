@@ -137,7 +137,7 @@ STATIC_URL = '/static/'
 #     'localhost:8282'
 # )
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Tell Django about the custom `User` model we created. The string
