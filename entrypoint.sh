@@ -5,6 +5,9 @@ set -e
 python manage.py makemigrations
 python manage.py migrate
 
+# Collect static files
+python manage.py collectstatic --noinput
+
 # Create a superuser if not exists (using a one-liner)
 if [ -n "$DJANGO_SUPERUSER_USERNAME" ] && [ -n "$DJANGO_SUPERUSER_PASSWORD" ]; then
     EMAIL=${DJANGO_SUPERUSER_EMAIL:-"admin@example.com"}
