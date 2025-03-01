@@ -28,7 +28,9 @@ DEBUG = os.environ.get('DEBUG', 'True').lower() in ('true', '1', 't')
 allowed_hosts = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1')
 ALLOWED_HOSTS = [host.strip() for host in allowed_hosts.split(',')]
 
+# Static Files
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
 
